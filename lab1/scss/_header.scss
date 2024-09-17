@@ -1,0 +1,76 @@
+@use 'variables';
+
+.header {
+	padding: 50px 0;
+
+	&__container {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__buttons {
+		flex-wrap: wrap;
+		display: flex;
+		padding: 0 15px 0;
+	}
+
+	&__button {
+		padding: 20px;
+		width: 130px;
+
+		&:not(:last-child) {
+			margin: 0 20px 0 0;
+		}
+	}
+
+	&__profile {
+		display: block;
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+
+		& > *:not(:last-child) {
+			padding: 0 20px 0 0;
+		}
+	}
+	&__item:first-child {
+		font-weight: 700;
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+		&__logo {
+			display: none;
+		}
+		&__buttons {
+			display: none;
+		}
+		&__profile {
+			display: flex;
+			width: 32px;
+			height: 32px;
+		}
+		&__container {
+			justify-content: space-between;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.header__container {
+		align-items: flex-start;
+	}
+	.menu {
+		flex: 0 0 50%;
+		&__list > * {
+			margin: 0 10px 20px 0;
+		}
+	}
+}
