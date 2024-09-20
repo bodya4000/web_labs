@@ -21,15 +21,17 @@
 		justify-content: center;
 
 		& > *:not(:last-child) {
-			margin: 0 10px 0 0;
+			margin: 0 35px 0 0;
 		}
 	}
 }
 
 @media (max-width: 480px) {
 	.footer {
-		&__logo {
-			display: none;
+		&__top {
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 20px;
 		}
 		&__socials {
 			& > *:not(:last-child) {
