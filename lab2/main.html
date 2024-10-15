@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Auth Page</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<h1 class="header__title">Parks</h1>
+				</div>
+			</header>
+
+			<main class="main">
+				<div class="main__container">
+					<div class="main__body">
+						<div class="main__helpers">
+							<button class="helper" onclick="sort()">sort</button>
+							<button class="helper" onclick="total()">total price</button>
+							<input
+								type="text"
+								id="search-input"
+								placeholder="Search by name or city"
+							/>
+						</div>
+						<div class="main__parks"></div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
