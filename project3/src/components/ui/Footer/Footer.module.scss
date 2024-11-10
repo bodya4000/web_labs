@@ -1,0 +1,43 @@
+.footer {
+	padding: calc(100rem / 16) 0 calc(50rem/16) 0;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: calc(300rem / 16);
+
+		&_top {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+
+	&__main_link {
+		color: #fff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 32px;
+	}
+	&__rights {
+		color: #fff;
+		font-family: Gilroy;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 32px;
+		opacity: 0.5;
+	}
+
+	&__nav {
+		display: flex;
+		gap: calc(200rem / 16);
+	}
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container _container">
+					<div class="header__nav">
+						<div class="header__menu_icon" onclick="onMenuClick()">
+							<img class="burger" src="assets/burger.svg" height="32" alt="" />
+							<img class="cross" src="assets/cross.svg" height="32" alt="" />
+						</div>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="" class="menu__link">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Destinations</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Partner</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="header__logo">
+						<img src="assets/logo.svg" alt="" />
+					</div>
+
+					<div class="header__buttons">
+						<div class="header__auth">
+							<a href="#" class="header__button _button _button_white">Login</a>
+							<a href="#" class="header__button _button _button_orange"
+								>Register</a
+							>
+						</div>
+						<a onclick="showAuthButtons()" class="header__profile">
+							<img class="profile-icon" src="assets/profile.png" alt="" />
+							<!-- <img class="cross" src="assets/cross.svg" alt="" /> -->
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<main class="page">
+				<div class="page__info page-info">
+					<div class="page-info__container _container">
+						<div class="page-info__body">
+							<h2 class="page-info__title">Guides by Thousand Sunny</h2>
+							<div class="page-info__text">
+								Packed with tips and advice from our on-the-ground experts, our
+								city guides app (iOS and Android) is the ultimate resource
+								before and during a trip.
+							</div>
+							<a href="#" class="page-info__button _button _button_orange"
+								>Download</a
+							>
+						</div>
+
+						<div class="page-info__image">
+							<img src="assets/info.svg" alt="" />
+						</div>
+					</div>
+				</div>
+
+				<section class="page__testimonials testimonials">
+					<div class="testimonials__container _container">
+						<h2 class="testimonials__title">Testimonials</h2>
+						<div class="testimonials__body">
+							<div class="testimonials__content">
+								<div class="testimonials__rate">
+									<img src="assets/star.svg" alt="" />
+									<img src="assets/star.svg" alt="" />
+									<img src="assets/star.svg" alt="" />
+									<img src="assets/star.svg" alt="" />
+									<img src="assets/star.svg" alt="" />
+								</div>
+
+								<blockquote class="testimonials__quote">
+									“Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+									dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
+									sit amet turpis nec”
+								</blockquote>
+								<cite class="testimonials__cite">
+									<h3>Edward Newgate</h3>
+									<div>Founder Circle</div>
+								</cite>
+							</div>
+							<div class="testimonials__image">
+								<img src="assets/dude.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="page__stories stories">
+					<div class="stories__container _container">
+						<div class="stories__top__container">
+							<h2 class="stories__title">Trending stories</h2>
+							<div class="stories__seemore">
+								<a href="#">View all ></a>
+							</div>
+						</div>
+
+						<div class="stories__body">
+							<div class="stories__column">
+								<article class="stories__item item-stories">
+									<a href="" class="item-stories__image">
+										<img src="assets/stories/image1.svg" alt="" />
+									</a>
+									<div class="item-stories__content">
+										<h3 class="item-stories__title">
+											The many benefits of taking a healing holiday
+										</h3>
+										<p class="item-stories__text">
+											‘Helaing holidays’ are on the rise tohelp maximise your
+											health and happines...
+										</p>
+										<a href="" class="item-stories__readmore">Read more</a>
+									</div>
+								</article>
+							</div>
+							<div class="stories__column">
+								<article class="stories__item item-stories">
+									<a href="" class="item-stories__image">
+										<img src="assets/stories/image2.svg" alt="" />
+									</a>
+									<div class="item-stories__content">
+										<h3 class="item-stories__title">
+											The many benefits of taking a healing holiday
+										</h3>
+										<p class="item-stories__text">
+											‘Helaing holidays’ are on the rise tohelp maximise your
+											health and happines...
+										</p>
+										<a href="" class="item-stories__readmore">Read more</a>
+									</div>
+								</article>
+							</div>
+							<div class="stories__column">
+								<article class="stories__item item-stories">
+									<a href="" class="item-stories__image">
+										<img src="assets/stories/image3.svg" alt="" />
+									</a>
+									<div class="item-stories__content">
+										<h3 class="item-stories__title">
+											The many benefits of taking a healing holiday
+										</h3>
+										<p class="item-stories__text">
+											‘Helaing holidays’ are on the rise tohelp maximise your
+											health and happines...
+										</p>
+										<a href="" class="item-stories__readmore">Read more</a>
+									</div>
+								</article>
+							</div>
+							<div class="stories__column">
+								<article class="stories__item item-stories">
+									<a href="" class="item-stories__image">
+										<img src="assets/stories/image4.svg" alt="" />
+									</a>
+									<div class="item-stories__content">
+										<h3 class="item-stories__title">
+											The many benefits of taking a healing holiday
+										</h3>
+										<p class="item-stories__text">
+											‘Helaing holidays’ are on the rise tohelp maximise your
+											health and happines...
+										</p>
+										<a href="" class="item-stories__readmore">Read more</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="footer__top _container">
+					<div class="footer__logo">
+						<img src="assets/logo.svg" alt="" />
+					</div>
+
+					<div class="footer__rights">
+						©2020 Thousand Sunny. All rights reserved
+					</div>
+				</div>
+
+				<div class="footer__socials social">
+					<div class="social__image">
+						<img src="assets/socials/image1.png" alt="" />
+					</div>
+					<div class="social__image">
+						<img src="assets/socials/image2.png" alt="" />
+					</div>
+					<div class="social__image">
+						<img src="assets/socials/image3.png" alt="" />
+					</div>
+					<div class="social__image">
+						<img src="assets/socials/image4.png" alt="" />
+					</div>
+					<div class="social__image">
+						<img src="assets/socials/image5.png" alt="" />
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/header.js"></script>
+	</body>
+</html>

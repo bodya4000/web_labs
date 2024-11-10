@@ -1,0 +1,33 @@
+.sortByContainer {
+	position: relative;
+	display: inline-block;
+}
+
+.button {
+	border-radius: 5px;
+	padding: 8px 20px;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	z-index: 1;
+	margin-top: 5px;
+}
+
+.option {
+	padding: 10px 20px;
+	cursor: pointer;
+	color: #007bff;
+	font-weight: 700;
+}
+
+.option:hover {
+	background-color: #007bff;
+	color: #fff;
+}

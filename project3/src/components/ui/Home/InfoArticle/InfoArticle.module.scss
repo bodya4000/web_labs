@@ -1,0 +1,31 @@
+.info_article {
+	&__body {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: calc(114rem / 16);
+		align-items: center;
+
+		&_reversed {
+			flex-direction: row-reverse;
+		}
+	}
+
+	&__text_block {
+		flex: 0 1 60%;
+		padding-left: calc(100rem / 16);
+		max-width: calc(720rem / 16);
+		h1 {
+			font-size: calc(63rem / 16);
+		}
+	}
+
+	&__img {
+		flex: 1 1 30%;
+		img {
+			min-width: 566px;
+			min-height: 720px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+}

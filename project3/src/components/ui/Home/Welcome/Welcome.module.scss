@@ -1,0 +1,47 @@
+.welcome {
+	padding: calc(200rem / 16) 0 0 0;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__text_block {
+		flex: 0 1 calc(950rem / 16);
+	}
+
+	&__text {
+		margin: 0 0 calc(40rem / 16) 0;
+	}
+
+	&__scroll_btn {
+		display: flex;
+		align-items: center;
+		gap: calc(10rem / 16);
+
+		color: #fff;
+		font-weight: 600;
+		transition: padding 0.4s ease 0.08s;
+		padding: calc(10rem / 16);
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 1px;
+			background-color: #fff;
+			bottom: 0;
+			left: 0;
+			transition: width 0.9s ease 0.08s;
+		}
+
+		&:hover::before {
+			width: 100%;
+		}
+
+		img {
+			width: 30px;
+			transform: rotate(90deg);
+		}
+	}
+}
