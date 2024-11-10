@@ -1,0 +1,22 @@
+.nav {
+	display: flex;
+	flex-direction: column;
+
+	gap: 2rem;
+
+	color: #fff;
+	font-family: Gilroy;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px;
+
+	&__link:first-child {
+		color: var(--Accent, #fbd784);
+		font-family: Gilroy;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 32px; /* 133.333% */
+	}
+}

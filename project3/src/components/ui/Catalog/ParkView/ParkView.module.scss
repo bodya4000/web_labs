@@ -1,0 +1,55 @@
+.park {
+	flex: 0 0 15%;
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px 1px rgb(183, 185, 186);
+
+	&__container {
+		border-radius: 10px;
+		display: flex;
+		flex: 1 1 auto;
+	}
+
+	&__body {
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(131, 135, 138);
+	}
+
+	&__img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		height: calc(200rem / 16);
+		overflow: hidden;
+		border-radius: 10px; 
+	
+		img {
+			height: 100%;
+			width: 100%;
+			border-radius: 10px;
+			object-fit: cover; 
+		}
+	}
+	
+	&__info {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.635rem;
+		flex: 1; 
+	}
+
+	&__description {
+		flex: 1 1 auto;
+	}
+
+	span {
+		font-weight: 700;
+		margin: 0 0.625rem 0 0;
+	}
+}

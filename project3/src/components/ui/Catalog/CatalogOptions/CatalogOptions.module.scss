@@ -1,0 +1,15 @@
+.options {
+	display: flex;
+	flex-direction: column;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+
+	&__details {
+		display: flex;
+		align-items: center;
+		gap: 0.625rem;
+	}
+}
