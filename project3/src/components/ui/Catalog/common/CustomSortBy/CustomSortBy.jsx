@@ -5,17 +5,20 @@ import CustomSelect from '../../../common/CustomSelect/CustomSelect';
 const SortBy = () => {
 	const [selectedOption, setSelectedOption] = useState('Sort By');
 
-	const { setSortState } = useContext(SortContext);
+	const { setSortState, setParkPage, setParksData } = useContext(SortContext);
 	const options = [
-		{ label: 'Price: Low to High', value: 'asc' },
-		{ label: 'Price: High to Low', value: 'desc' },
+		{ label: 'Price: Low to High', value: 'price:asc' },
+		{ label: 'Price: High to Low', value: 'price:desc' },
+		{ label: 'Cycling ditance: Low to High', value: 'cycling:asc' },
+		{ label: 'Cycling ditance: High to Low', value: 'cycling:desc' },
 		{ label: 'Alphabetical Order', value: 'alphabet' },
 	];
 
 	const handleOptionClick = option => {
 		setSelectedOption(option.label);
 		setSortState(option.value);
-		setIsOpen(false);
+		setParkPage(1);
+		setParksData([]);
 	};
 	return (
 		<CustomSelect

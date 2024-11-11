@@ -1,5 +1,5 @@
 .park {
-	flex: 0 0 15%;
+	flex: 0 0 22%;
 	display: flex;
 	flex-direction: column;
 
@@ -14,6 +14,7 @@
 
 	&__body {
 		border-radius: 10px;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		background-color: rgb(131, 135, 138);
@@ -26,22 +27,22 @@
 		text-align: center;
 		height: calc(200rem / 16);
 		overflow: hidden;
-		border-radius: 10px; 
-	
+		border-radius: 10px;
+
 		img {
 			height: 100%;
 			width: 100%;
 			border-radius: 10px;
-			object-fit: cover; 
+			object-fit: cover;
 		}
 	}
-	
+
 	&__info {
 		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		gap: 0.635rem;
-		flex: 1; 
+		flex: 1;
 	}
 
 	&__description {

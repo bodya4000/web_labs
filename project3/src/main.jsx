@@ -1,12 +1,11 @@
-import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Catalog from './components/screens/Catalog/Catalog.jsx';
 import Home from './components/screens/Home/Home.jsx';
 import Layout from './components/screens/Layout.jsx';
+import ParkDetail from './components/screens/ParkDetail/ParkDetail.jsx';
 import './index.scss';
-import ParkDetail from './components/screens/ParkDetail/ParkDetail.jsx'
 
 const router = createBrowserRouter([
 	{
@@ -29,14 +28,12 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/catalog/park/:id',
-				element: <ParkDetail/>,
+				element: <ParkDetail />,
 			},
 		],
 	},
 ]);
 
 createRoot(document.getElementById('root')).render(
-	<StrictMode>
-		<RouterProvider router={router} />
-	</StrictMode>
+	<RouterProvider router={router} />
 );

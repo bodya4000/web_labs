@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { SortContext } from '../../../../screens/Catalog/Catalog';
 
 const CustomSearchInput = () => {
-	const { searchText, setSearchText } = useContext(SortContext);
+	const { searchText, setSearchText, setParkPage, setParksData } = useContext(SortContext);
 
 	const styles = {
 		input: {
@@ -21,11 +21,17 @@ const CustomSearchInput = () => {
 		},
 	};
 
+	const onChangeText = e => {
+		setSearchText(e.target.value);
+		setParkPage(1);
+		setParksData([])
+	};
+
 	return (
 		<input
 			type='text'
 			value={searchText}
-			onChange={e => setSearchText(e.target.value)}
+			onChange={onChangeText}
 			style={styles.input}
 			placeholder='Search...'
 			onFocus={e => (e.target.style.borderBottomColor = '#007bff')}

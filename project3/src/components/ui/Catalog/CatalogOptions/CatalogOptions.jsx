@@ -8,14 +8,20 @@ import SortBy from '../common/CustomSortBy/CustomSortBy';
 import styles from './CatalogOptions.module.scss';
 
 const CatalogOptions = () => {
-	const { setFreeParksState } = useContext(SortContext);
+	const { setFreeParksState, setParkPage,setParksData } = useContext(SortContext);
 
 	const setFilterTrue = () => {
 		setFreeParksState(true);
+		setParkPage(1);
+		setParksData([])
+
 	};
 
 	const setFilterFalse = () => {
 		setFreeParksState(false);
+		setParkPage(1);
+		setParksData([])
+
 	};
 
 	return (
@@ -31,7 +37,6 @@ const CatalogOptions = () => {
 							onActive={setFilterTrue}
 							onDisable={setFilterFalse}
 						/>
-						{/* <CustomFilterRadio name='With cycling' value='cycling' /> */}
 						<SortBy />
 					</div>
 				</div>
